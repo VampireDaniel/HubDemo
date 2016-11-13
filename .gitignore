@@ -1,0 +1,7 @@
+.idea/*
+node_modules/*
+public/upload/*
+views/template.ejs
+.tmp/*
+dist/*
+logs/*

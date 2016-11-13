@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body ng-controller="PageController" style="background-color: #CCCCCC">
+<div style="margin: 0px 300px;">
+    <div class="row" style="">
+        <div ng-repeat="item in data" ng-class="{'col-sm-6 col-md-6': item.span == 2 , 'col-sm-3 col-md-3': item.span == 1  }" style="padding: 0px;">
+            <div style="margin:7px;height:450px;background-color: white">
+                <img ng-src="{{item.image}}" style="width:100%;">
+                <div style="width: 100%;">
+                    <div style="padding:10px 20px;">
+                        <a href="#" style="color: #3A3A3A">{{item.type}}</a>
+                        <h2>{{item.title}}</h2>
+                        <p>{{item.abstract}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+[{
+  "type": "FINANCIALS",
+  "title": "Our Q3 Results",
+  "abstract": "See our earnings release and review highlights from the quarter.",
+  "image": "./img/headq_0.jpg",
+  "span":1
+},{
+  "type": "LEADERSHIP",
+  "title": "Heard at the Global All Hands Meeting",
+  "abstract":"Our leaders discussed progress, challenges and holiday plans, and Devin called out the initiatives seen above.",
+  "image": "./img/slide1.jpg",
+  "span":2
+},{
+  "type": "FINANCIALS",
+  "title": "Our CEO on Q3 Earnings",
+  "abstract": "\"We delivered good top and bottom line financial results,\" Devin noted in his message.",
+  "image": "./img/devcas.jpg",
+  "span":1
+},{
+  "type": "TECHNOLOGY",
+  "title": "Say \"Hello\" to eBay ShopBot Beta",
+  "abstract": "ShopBot is a smart personal shopping assistant that's there whenever you need it.",
+  "image": "./img/ShopBot Post HUB Image.jpg",
+  "span":1
+},{
+  "type": "ANNOUNCEMENTS",
+  "title": "New Fine Art & Design Collaboration",
+  "abstract": "Media and syndication partnership with Architectural Digest provides inspiration for shoppers.",
+  "image": "./img/eBay Collective HUB.jpg",
+  "span":1
+}]
