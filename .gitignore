@@ -5,3 +5,4 @@ views/template.ejs
 .tmp/*
 dist/*
 logs/*
+*.log
