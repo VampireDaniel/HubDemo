@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript">
+
+        var myApp = angular.module('myApp', []);
+        myApp.controller('myController', function ($scope) {
+            $scope.tt = 'aaaa';
+            $scope.arr = ['a', 'b', 'c', 'd'];
+
+            var name = 'a';
+
+            $scope.ttfun = function () {
+                //name=$scope.arr;
+                $scope.arr.push('e');
+            }
+
+            $scope.arr.push('e');
+
+            $scope.$watch('arr', function (newValue, oldValue) {
+                console.log(newValue + '|' + oldValue);
+
+            }, true);
+
+
+        });
+    </script>
+</head>
+<body>
+
+<div ng-controller="myController">
+    <!--{{arr}}-->
+    <!--<button ng-click="ttfun()">test</button>-->
+
+    {{arr}}
+</div>
+
+
+</body>
